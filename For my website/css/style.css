@@ -1,0 +1,269 @@
+body{
+  font: 15px/1.5 "Times New Roman", Times, serif;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+/*global */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+.button_1{
+  height: 38px;
+  background: #91A616;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+
+.dark{
+  padding: 15px;
+  background: black;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* Header */
+header{
+  background: white;
+  color: black;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: grey 5px solid;
+}
+
+
+header a{
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+
+header .highlight, header .current a{
+  color: #91A616;
+  font-weight: bold;
+}
+
+header a:hover{
+  color: #91A616;
+  font-weight: bold;
+}
+
+/*showcase */
+#showcase{
+  min-height:400px;
+  /*bacground
+  background:url('../img/world.jpg') no-repeat 0 -100px;
+  */
+  background: repeating-linear-gradient(grey,#404040);
+  text-align: center;
+  color: white;
+}
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 20px;
+}
+
+
+/*box*/
+#box{
+  margin-top: 20px;
+}
+
+#box .box{
+  float: none;
+  text-align: center;
+
+  padding: 10px;
+}
+
+#box .box img{
+  width: 80px;
+}
+
+#box .box h3 a{
+  text-decoration: none;
+  color: black;
+}
+
+#box .box h3 a:hover{
+  color: #91A616;
+  font-weight: bold;
+}
+#box_python .box{
+  float: none;
+  text-align: center;
+  padding: 10px;
+}
+#box_python{
+  margin-top: 20px;
+  background-color: #cccccc;
+}
+#box_python .box img{
+  width: 80px;
+}
+#box_python .box h3 a{
+  text-decoration: none;
+  color: black;
+}
+#box_python .box h3 a:hover{
+  color: #91A616;
+  font-weight: bold;
+}
+#discord img{
+  width: 80px;
+}
+
+#discord .invite{
+  float: none;
+  text-align: center;
+  padding: 10px;
+
+}
+
+#discord .invite h3 a{
+  text-decoration: none;
+  color: black;
+}
+
+#discord .invite h3 a:hover{
+  color: white;
+  font-weight:bold;
+}
+
+#discord {
+  background-color: #91A616;
+  padding: 20px;
+  color: black;
+  margin: -20px;
+}
+
+#about_class .python_1{
+  text-align: center;
+  font-size: 20px
+}
+#about_class {
+  background-color: white;
+  padding: 20px;
+  color: black;
+  margin: -20px;
+}
+#about_class h1{
+  text-decoration: underline;
+  font-weight:bold;
+  text-align: center;
+}
+/*Sidebar*/
+aside#sidebar{
+  float: right;
+  width: 30%
+  margin-top: 10px;
+}
+
+aside#sidebar .enroll input,  aside#sidebar .enroll textarea{
+  width: 90%;
+  padding: 5px;
+}
+aside#sidebar .dark a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+
+/*Main-col*/
+article#main_col{
+  float: left;
+  width: 65%;
+}
+/*Services*/
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #91A616 solid 1px;
+  margin-bottom: 5px;
+  background: white;
+}
+article#main_col li h3 a{
+  text-decoration: none;
+  color: black;
+}
+article#main_col li h3 a:hover{
+  color: #91A616;
+  font-weight:bold;
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: black;
+  background: gray;
+  text-align: center;
+}
+
+footer#main_footer{
+  padding: 20px;
+  margin-top: -20px;
+  color: black;
+  background: gray;
+  text-align: center;
+}
+
+/*Media Queries*/
+@media(max-width:768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #newsletter h1,
+  #newsletter form,
+  #box .box,
+  article#main_col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%
+  }
+  header{
+    padding-bottom: 20px;
+  }
+  #showcase h1{
+    margin-top: 40px;
+  }
+
+}
